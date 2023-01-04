@@ -1,0 +1,232 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+ body * {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+ 
+  header li {
+    float: left;
+    width: 10%;
+    list-style: none;
+    color: black;
+  }
+
+  header * {
+    background: whitesmoke;
+    padding: 0%;
+    margin: auto;
+  }
+
+  main {
+    width: 100%;
+    float: left;
+    height: 1000px;
+    background-image: url(./boywlemons.jpg);
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  main h1 {
+    font-size: 65px;
+    color: whitesmoke;
+    font-weight: lighter;
+  }
+
+  main > section {
+    padding-left: 10rem;
+  }
+
+  .side {
+    transform: rotate(90deg);
+    float: right;
+    padding-bottom: 5rem;
+  }
+
+  button {
+    color: whitesmoke;
+    background: black;
+    padding: 20px 20px;
+    margin-top: 30px;
+    border: 0;
+
+  }
+
+  main section + section {
+    background: black;
+    width: 20%;
+    float: left;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+
+  main section + section > span {
+    font-size: larger;
+  }
+
+  .otherbutton {
+    background: whitesmoke;
+    color: black;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+  
+  .whitebuttons {
+    padding: 0%;
+    width: 170px;
+    height: 0px;
+    float: right;
+    margin-top: 500px;
+    margin-left: 600px;
+  }
+
+  .lastry {
+    color: black;
+    background: whitesmoke;
+    border-radius: 80px;
+  }
+
+  .secondsec {
+    height: 340px;
+    background: #e2deda;
+    width: 100%;
+    float: left;
+  }
+
+  .secsec {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    padding: 3rem 4rem 0 4rem;
+  }
+
+  .secsec h5 {
+    font-size: larger;
+  }
+
+  .thirdsec {
+    height: 500px;
+    background: whitesmoke;
+    width: 100%;
+    float: left;
+    padding: 0 3rem;
+  }
+
+  .thisec {
+    float: left;
+    width: 50%;
+    padding: 3rem 4rem 0 4rem;
+  }
+
+  .thisec img {
+    width: 95%;
+  }
+
+  .thisec h2 {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+
+  .thisec p {
+    width: 90%;
+    font-size: larger;
+  }
+ 
+  .fourthsec {
+    height: 500px;
+    background: whitesmoke;
+    width: 100%;
+    float: left;
+    padding: 0 3rem;
+  }
+
+  .fousec {
+    float: left;
+    width: 33.3333%;
+    padding: 3rem 4rem 0 6rem;
+  }
+
+  .fousec img {
+    width: 70%;
+  }
+
+  .fousec button {
+    margin: 0 0 5rem 2rem;
+  }
+
+  .fifthsec {
+    height: 400px;
+    background: whitesmoke;
+    width: 100%;
+    float: left;
+    padding: 0 10rem;
+  }
+
+  .fifthsec h3 {
+    font-weight: lighter;
+    margin-bottom: 0;
+  }
+
+  #fifsec {
+    margin: 0 10rem;
+    background-image: url(./bluecurly.jpg);
+    background-repeat: none;
+    background-size: cover;
+    padding: 3rem;
+  }
+
+  .sixthsec {
+    height: 800px;
+    background: whitesmoke;
+    width: 100%;
+    float: left;
+    padding: 0 10rem;
+    text-align: center;
+  }
+
+  .masonry {
+    display: grid;
+    grid-gap: 1em; /* [1] Add some gap between rows and columns */
+    grid-template-columns: repeat( auto-fill, minmax( 200px, 1fr ) ); /* [2] Make columns adjust according to the available viewport */
+    grid-auto-rows: 250px; /* [3] Set the height for implicitly-created row track */
+    margin-left: 14rem;
+  }
+
+  .masonry img {
+    width: 98%;
+  }
+
+.down {
+    padding-top: 10rem;
+}
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
